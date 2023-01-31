@@ -1,0 +1,286 @@
+{
+	"info": {
+		"_postman_id": "2cd9bbd8-aed2-4670-a803-42c4a7eddbfd",
+		"name": "node 27",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23648936"
+	},
+	"item": [
+		{
+			"name": "Get user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{domain}}/user/getUser",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						"getUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get user by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{domain}}/user/getUser/1",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						"getUser",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get like",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{domain}}/user/getUser/1",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						"getUser",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get like res",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{domain}}/user/getUser/1",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						"getUser",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get rate res",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{domain}}/user/getUser/1",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						"getUser",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get rate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{domain}}/user/getUser/1",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						"getUser",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"full_name\":\"hoa\",\r\n      \"email\":\"hoa@gm.com\",\r\n      \"pass_word\":\"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/user/createUser",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						"createUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"full_name\":\"khoi\",\r\n      \"email\":\"khoi@gm.com\",\r\n      \"pass_word\":\"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/user/updateUser/100",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						"updateUser",
+						"100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order food",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\":1,\r\n    \"food_id\":1,\r\n    \"amount\":2,\r\n    \"code\":\"code1\",\r\n    \"arrSubId\":\"[1,2,3]\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/user/orderFoodfromUser",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						"orderFoodfromUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Toggle like",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\":5,\r\n    \"res_id\":1,\r\n    \"date_like\":\"2038-01-09 03:14:07\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/restaurant/like",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"restaurant",
+						"like"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rate res",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\":5,\r\n    \"res_id\":1,\r\n    \"date_like\":\"2038-01-09 03:14:07\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/restaurant/like",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"restaurant",
+						"like"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "domain",
+			"value": "http://localhost:8080/api",
+			"type": "string"
+		}
+	]
+}
